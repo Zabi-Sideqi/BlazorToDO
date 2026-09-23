@@ -1,0 +1,20 @@
+﻿<nav class="navbar-brand bg-body border-bottom">
+    <div class="container">
+        <span class="navbar-brand fw-semibold">
+           @NavTitle
+
+        </span>
+
+    </div>
+
+    @if(ChildContent is not null)
+    {
+        <div class="d-flex gap-2">
+            @ChildContent
+        </div>
+    }
+</nav>
+
+@* @code {
+
+} *@
