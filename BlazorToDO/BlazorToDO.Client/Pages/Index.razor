@@ -2,11 +2,24 @@
 
 <PageTitle>ToDo</PageTitle>
 
-<InputTodo/>
-<Items/>
+<InputTodo />
+<Items TodoItems="_todoItems" />
 
-@code{
+@code {
+    private List<TodoItem> _todoItems = null!;
 
+    protected override void OnInitialized()
+    {
+        _todoItems =
+             [
+                 new(){Text = "Köpa bananer", Completed = true, Created = DateTime.Now.AddDays(-2)},
+                 new(){Text = "Klar Övningen"},
+                 new(){Text = "Åka Stockholm", Created = DateTime.Now.AddDays(-1).AddHours(-5)},
+
+             ];
+    }
 }
+
+
 
 

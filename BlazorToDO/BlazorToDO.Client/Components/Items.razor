@@ -1,9 +1,15 @@
 ﻿<ul class="list-group mt-4">
 
-
-
+    @foreach(var item in TodoItems )
+    {
+        <Item @key="item.Id" TodoItem="item"/>
+    }
 </ul>
 
 @code {
-
+    [Parameter]
+    public List<TodoItem> TodoItems { get; set; } = [];
 }
+
+
+ 
