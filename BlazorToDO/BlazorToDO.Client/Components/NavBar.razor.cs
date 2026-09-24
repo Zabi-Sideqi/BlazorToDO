@@ -7,6 +7,6 @@ namespace BlazorToDO.Client.Components
         [Parameter]
         public string NavTitle { get; set; } = "Default Navbar Title";
         [Parameter]
-        public RenderFragment? ChildContent {  get; set; }
+        public RenderFragment? RightContent {  get; set; }
     }
 }

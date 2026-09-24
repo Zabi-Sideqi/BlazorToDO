@@ -1,1 +1,11 @@
 /* CSS for NavBar component */
+.todo-logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+}
+
+    .todo-logo span {
+        color: #0d6efd;
+    }

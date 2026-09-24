@@ -1,20 +1,17 @@
-﻿<nav class="navbar-brand bg-body border-bottom">
-    <div class="container">
-        <span class="navbar-brand fw-semibold">
-           @NavTitle
+﻿<nav class="navbar bg-body py-3">
+    <div class="container d-flex align-items-center justify-content-between">
 
-        </span>
+        <a class="navbar-brand todo-logo d-inline-flex align-items-center gap-2 mb-0" href="#">
+            <i class="bi bi-check2-square text-primary"></i>
+            <span>@NavTitle</span>
+        </a>
+
+        @if (RightContent is not null)
+        {
+            <div class="d-flex align-items-center">
+                @RightContent
+            </div>
+        }
 
     </div>
-
-    @if(ChildContent is not null)
-    {
-        <div class="d-flex gap-2">
-            @ChildContent
-        </div>
-    }
 </nav>
-
-@* @code {
-
-} *@

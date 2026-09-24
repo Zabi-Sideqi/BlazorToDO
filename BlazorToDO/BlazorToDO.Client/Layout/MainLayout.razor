@@ -1,23 +1,29 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="min-vh-100 d-flex flex-column bg-body-tertiary">
-<header class="sticky-top">
-    <NavBar NavTitle="ToDo">
-        <button class="btn btn-default btn-sm" type="button">Inserted with fragment</button>
-    </NavBar>
-</header>
-<main class="flex-grow-1">
-<div class="container py-4">
-@Body
-</div>
-</main>
-</div>
+    <header class="sticky-top bg-body shadow-sm">
+        <NavBar NavTitle="ToDo">
+            <RightContent>
+                <button class="btn text-primary bg-transparent border-0" type="button">
+                    Inserted with fragment
+                </button>
+            </RightContent>
 
-<footer class="border-top bg-body">
-<div class="container py-3 small text-secondary">
-ToDo List Blazor
+        </NavBar>
+    </header>
+
+    <main class="flex-grow-1">
+        <div class="container py-4">
+            @Body
+        </div>
+    </main>
+
+    <footer class="border-top bg-body mt-auto">
+        <div class="container py-3 small text-secondary">
+            ToDo List Blazor
+        </div>
+    </footer>
 </div>
-</footer>
 
 <div id="blazor-error-ui" data-nosnippet>
     An unhandled error has occurred.
